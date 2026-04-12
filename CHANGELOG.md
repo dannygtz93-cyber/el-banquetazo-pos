@@ -7,6 +7,22 @@ y versionado **Semántico (SemVer)**
 
 ---
 
+[0.3.0] - 2026-04-12
+
+### Agregado
+
+* Pantalla principal POS (main_view)
+* Pantalla de órdenes (orders_view)
+* Pantalla configuración (config_view)
+* Estructura UI con Flet
+
+### Técnico
+
+* Separación de capa UI
+* Arquitectura basada en views
+
+---
+
 [0.2.0] - 2026-04-12
 
 ### Agregado
