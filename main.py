@@ -1,24 +1,27 @@
+import flet as ft
+
 from src.database.models import create_tables, seed_products
-from src.services.orders import crear_orden, agregar_producto
+from src.ui.main_view import main_view
 
-def test_orders():
-    # Orden 1
-    orden1 = crear_orden()
-    agregar_producto(orden1, 1)
-    agregar_producto(orden1, 2)
 
-    # Orden 2
-    orden2 = crear_orden()
-    agregar_producto(orden2, 3)
-    agregar_producto(orden2, 3)
-    agregar_producto(orden2, 4)
+def main(page: ft.Page):
 
-    print("Ordenes creadas:", orden1, orden2)
+    # Configuración ventana
+    page.title = "El Banquetazo POS"
+    page.window_full_screen = True
+    page.padding = 0
 
-def main():
+    # Inicializar base de datos
     create_tables()
     seed_products()
-    test_orders()
+
+    # Agregar vista principal
+    page.views.append(
+        main_view(page)
+    )
+
+    page.update()
+
 
 if __name__ == "__main__":
-    main()
+    ft.run(main)

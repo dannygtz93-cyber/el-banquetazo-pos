@@ -7,6 +7,16 @@ y versionado **Semántico (SemVer)**
 
 ---
 
+---
+
+[0.3.1] - 2026-04-12
+
+### Técnico
+
+* Bug corregido de compatibilidad con Flet 0.84
+
+---
+
 [0.3.0] - 2026-04-12
 
 ### Agregado

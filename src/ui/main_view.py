@@ -4,7 +4,7 @@ import flet as ft
 def main_view(page: ft.Page):
 
     return ft.View(
-        "/main",
+        route="/main",
         controls=[
             ft.Row(
                 expand=True,
@@ -15,12 +15,19 @@ def main_view(page: ft.Page):
                         expand=3,
                         padding=10,
                         content=ft.Column(
+                            expand=True,
                             controls=[
-                                ft.Text("Productos", size=20, weight="bold"),
+                                ft.Text(
+                                    "Productos",
+                                    size=20,
+                                    weight=ft.FontWeight.BOLD
+                                ),
 
                                 ft.GridView(
                                     expand=True,
                                     runs_count=3,
+                                    spacing=10,
+                                    run_spacing=10,
                                     controls=[
                                         ft.ElevatedButton("Taco Asada"),
                                         ft.ElevatedButton("Taco Pastor"),
@@ -35,10 +42,15 @@ def main_view(page: ft.Page):
                     ft.Container(
                         expand=2,
                         padding=10,
-                        bgcolor=ft.colors.GREY_100,
+                        bgcolor=ft.Colors.GREY_100,
                         content=ft.Column(
+                            expand=True,
                             controls=[
-                                ft.Text("Orden Actual", size=20),
+                                ft.Text(
+                                    "Orden Actual",
+                                    size=20,
+                                    weight=ft.FontWeight.BOLD
+                                ),
 
                                 ft.ListView(
                                     expand=True,
@@ -55,13 +67,18 @@ def main_view(page: ft.Page):
                         )
                     ),
 
-                    # Ordenes abiertas
+                    # Órdenes abiertas
                     ft.Container(
                         expand=1,
                         padding=10,
                         content=ft.Column(
+                            expand=True,
                             controls=[
-                                ft.Text("Órdenes", size=20),
+                                ft.Text(
+                                    "Órdenes",
+                                    size=20,
+                                    weight=ft.FontWeight.BOLD
+                                ),
 
                                 ft.ListView(
                                     expand=True,

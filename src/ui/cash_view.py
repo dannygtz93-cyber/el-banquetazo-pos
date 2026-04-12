@@ -4,32 +4,35 @@ import flet as ft
 def cash_view(page: ft.Page):
 
     return ft.View(
-        "/cash",
+        route="/cash",
         controls=[
-            ft.Column(
-                alignment="center",
-                horizontal_alignment="center",
+            ft.Container(
                 expand=True,
-                controls=[
+                alignment=ft.alignment.center,
+                content=ft.Column(
+                    alignment=ft.MainAxisAlignment.CENTER,
+                    horizontal_alignment=ft.CrossAxisAlignment.CENTER,
+                    controls=[
 
-                    ft.Text(
-                        "Caja Cerrada",
-                        size=30,
-                        weight="bold"
-                    ),
+                        ft.Text(
+                            "Caja Cerrada",
+                            size=30,
+                            weight=ft.FontWeight.BOLD
+                        ),
 
-                    ft.TextField(
-                        label="Fondo inicial",
-                        width=300
-                    ),
+                        ft.TextField(
+                            label="Fondo inicial",
+                            width=300
+                        ),
 
-                    ft.ElevatedButton(
-                        "Abrir Caja",
-                        width=200,
-                        height=50
-                    )
+                        ft.ElevatedButton(
+                            "Abrir Caja",
+                            width=200,
+                            height=50
+                        )
 
-                ]
+                    ]
+                )
             )
         ]
     )

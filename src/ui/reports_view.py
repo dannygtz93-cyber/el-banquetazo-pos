@@ -4,20 +4,22 @@ import flet as ft
 def reports_view(page: ft.Page):
 
     return ft.View(
-        "/reports",
+        route="/reports",
         controls=[
 
             ft.Column(
                 expand=True,
+                padding=20,
                 controls=[
 
                     ft.Text(
                         "Reporte de Ventas",
                         size=25,
-                        weight="bold"
+                        weight=ft.FontWeight.BOLD
                     ),
 
                     ft.Row(
+                        spacing=20,
                         controls=[
                             ft.Card(
                                 content=ft.Container(
