@@ -1,7 +1,7 @@
 # 🌮 El Banquetazo POS
 
 ![Python](https://img.shields.io/badge/Python-3.x-blue)
-![Version](https://img.shields.io/badge/version-0.0.1-green)
+![Version](https://img.shields.io/badge/version-0.1.0-green)
 ![Status](https://img.shields.io/badge/status-development-orange)
 ![License](https://img.shields.io/badge/license-MIT-lightgrey)
 
