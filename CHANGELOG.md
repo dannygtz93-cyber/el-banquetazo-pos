@@ -7,24 +7,42 @@ y versionado **Semántico (SemVer)**
 
 ---
 
+[0.2.0] - 2026-04-12
+
+### Agregado
+
+* Servicio de órdenes (orders service)
+* Crear órdenes
+* Agregar productos a órdenes
+* Calcular total automático
+* Obtener órdenes abiertas
+* Cerrar órdenes
+
+### Técnico
+
+* Implementación de lógica de negocio
+* Separación de capa services
+
+---
+
 [0.1.0] - 2026-04-12
 
 ### Agregado
 
-Estructura base del proyecto
-Integración de base de datos SQLite
-Tabla de órdenes
-Tabla de productos
-Tabla de items de órdenes
-Productos iniciales del menú
-Inicialización automática de base de datos
+* Estructura base del proyecto
+* Integración de base de datos SQLite
+* Tabla de órdenes
+* Tabla de productos
+* Tabla de items de órdenes
+* Productos iniciales del menú
+* Inicialización automática de base de datos
 
 ### Técnico
 
-Módulo de conexión a base de datos
-Módulo de creación de modelos
-Carga inicial de productos
-Definición de arquitectura del proyecto
+* Módulo de conexión a base de datos
+* Módulo de creación de modelos
+* Carga inicial de productos
+* Definición de arquitectura del proyecto
 
 ---
 
