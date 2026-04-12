@@ -1,5 +1,10 @@
 # 🌮 El Banquetazo POS
 
+![Python](https://img.shields.io/badge/Python-3.x-blue)
+![Version](https://img.shields.io/badge/version-0.0.1-green)
+![Status](https://img.shields.io/badge/status-development-orange)
+![License](https://img.shields.io/badge/license-MIT-lightgrey)
+
 Aplicación de punto de venta (POS) para taquería desarrollada en **Python + Flet + SQLite**.
 
 Diseñada específicamente para un puesto de tacos con operación rápida y sencilla.
